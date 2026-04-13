@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoVakwerk Amsterdam — Uw Garage voor Onderhoud & Reparatie</title>
+  <meta name="description" content="AutoVakwerk Amsterdam: specialist in APK, onderhoud, banden en schadeherstel. Betrouwbare autogarage met jarenlange ervaring.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">Auto<span>Vakwerk</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">Over Ons</a></li>
+        <li><a href="#services">Diensten</a></li>
+        <li><a href="#projects">Projecten</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"><img src="images/hero.jpg" alt="AutoVakwerk garage Amsterdam"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge">Trusted by 500+ garages</span>
+      <h1>Vakmanschap voor <span>uw auto</span></h1>
+      <p>Bij AutoVakwerk Amsterdam combineren wij traditioneel vakmanschap met moderne technologie. Van APK-keuring tot schadeherstel: uw auto is bij ons in goede handen.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Gratis Offerte</a>
+        <a href="#services" class="btn btn-outline">Onze Diensten</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><h3>15+</h3><p>Jaar ervaring</p></div>
+        <div class="stat-item"><h3>5.000+</h3><p>Tevreden klanten</p></div>
+        <div class="stat-item"><h3>4.9</h3><p>Google score</p></div>
+      </div>
+    </div>
+  </section>
+  <div class="ticker" style="background:var(--color-accent,#f5a623);padding:12px 0;overflow:hidden;">
+    <div style="display:flex;gap:48px;animation:tickerScroll 20s linear infinite;white-space:nowrap;">
+      <span><iconify-icon icon="lucide:car"></iconify-icon> APK</span><span><iconify-icon icon="lucide:wrench"></iconify-icon> Onderhoud</span><span><iconify-icon icon="lucide:circle"></iconify-icon> Banden</span><span><iconify-icon icon="lucide:disc"></iconify-icon> Remmen</span><span><iconify-icon icon="lucide:wind"></iconify-icon> Airco</span><span><iconify-icon icon="lucide:shield"></iconify-icon> Schadeherstel</span><span><iconify-icon icon="lucide:car"></iconify-icon> APK</span><span><iconify-icon icon="lucide:wrench"></iconify-icon> Onderhoud</span><span><iconify-icon icon="lucide:circle"></iconify-icon> Banden</span><span><iconify-icon icon="lucide:disc"></iconify-icon> Remmen</span><span><iconify-icon icon="lucide:wind"></iconify-icon> Airco</span><span><iconify-icon icon="lucide:shield"></iconify-icon> Schadeherstel</span>
+    </div>
+  </div>
+  <style>@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>
+  <style>.ticker span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:700;color:var(--color-bg,#0a0a0f);text-transform:uppercase;letter-spacing:0.05em;}</style>
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-image"><img src="images/about.jpg" alt="Over AutoVakwerk"></div>
+      <div class="about-text">
+        <span class="badge">Over ons</span>
+        <h2>Eerlijk, deskundig en altijd transparant</h2>
+        <p>Sinds 2009 zijn wij de vaste garage voor honderden Amsterdammers. Wij geloven in eerlijke prijzen, heldere communicatie en werk waar u op kunt bouwen.</p>
+        <p>Ons team van gecertificeerde monteurs werkt met de nieuwste apparatuur om uw auto in topconditie te houden.</p>
+        <ul class="about-features">
+          <li><i class="lucide-check"></i> RDW-erkend keuringstation</li>
+          <li><i class="lucide-check"></i> Alle merken en modellen</li>
+          <li><i class="lucide-check"></i> Haal- en brengservice</li>
+          <li><i class="lucide-check"></i> Garantie op alle werkzaamheden</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Neem Contact Op</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ======================== BEFORE / AFTER ======================== -->
+  <section class="ba-section" style="height:100vh;position:relative;overflow:hidden;background:#000;">
+    <div style="width:100%;height:100%;position:relative;">
+      <img src="images/craft.jpg" alt="Na" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+      <img src="images/hero.jpg" alt="Voor" id="baBefore" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;">
+      <div id="baLabel" style="position:absolute;z-index:3;bottom:10%;left:50%;transform:translateX(-50%);text-align:center;opacity:0;">
+        <span style="display:inline-block;background:var(--color-accent,#C1FF72);color:#0a0a0a;padding:8px 20px;border-radius:99px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Scroll om te zien</span>
+        <h2 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,0.6);">Van oud naar <em style="color:var(--color-accent,#C1FF72);">nieuw</em></h2>
+      </div>
+    </div>
+  </section>
+<!-- Services -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Diensten</span>
+        <h2>Wat wij voor u kunnen doen</h2>
+        <p>Van regulier onderhoud tot complexe reparaties, wij bieden een compleet pakket aan autodiensten.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon"><i class="lucide-car"></i></div>
+          <h3>APK-keuring</h3>
+          <p>Officieel RDW-erkend keuringstation. Snel en betrouwbaar uw APK regelen, vaak dezelfde dag nog.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="lucide-wrench"></i></div>
+          <h3>Onderhoud</h3>
+          <p>Periodiek onderhoud volgens fabrieksvoorschriften. Wij houden uw auto in perfecte staat.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="lucide-circle"></i></div>
+          <h3>Banden</h3>
+          <p>Bandenwissels, uitlijnen en balanceren. Wij adviseren u over de beste banden voor uw rijstijl.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="lucide-disc"></i></div>
+          <h3>Remmen</h3>
+          <p>Remschijven, remblokken en remvloeistof. Veiligheid staat bij ons altijd op nummer een.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="lucide-wind"></i></div>
+          <h3>Airco</h3>
+          <p>Airco bijvullen, ontgassen en onderhoud. Rijd comfortabel de zomer en winter door.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="lucide-shield"></i></div>
+          <h3>Schadeherstel</h3>
+          <p>Van kleine deuk tot grote schade: wij herstellen uw auto vakkundig en snel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Projecten</span>
+        <h2>Recent afgeronde klussen</h2>
+        <p>Een greep uit onze meest recente projecten en reparaties.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project motorblok revisie">
+          <div class="overlay">
+            <h3>Motorblok Revisie</h3>
+            <p>Complete revisie van een 2.0 TDI motorblok inclusief distributieriem.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project schadeherstel">
+          <div class="overlay">
+            <h3>Schadeherstel BMW</h3>
+            <p>Bumper en spatbord hersteld na parkeerschade. Als nieuw opgeleverd.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/detail.jpg" alt="Detail reiniging">
+          <div class="overlay">
+            <h3>Detail Reiniging</h3>
+            <p>Volledige interieur- en exterieurreininging met keramische coating.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="images/craft.jpg" alt="Remmen revisie">
+          <div class="overlay">
+            <h3>Complete Remmenset</h3>
+            <p>Upgrade naar performance remschijven en -blokken voor een Golf GTI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section class="carousel-section">
+    <div class="section-header">
+      <span class="badge">Werkplaats</span>
+      <h2>Een kijkje in onze garage</h2>
+    </div>
+    <div class="carousel-track" id="carousel">
+      <img src="images/hero.jpg" alt="Werkplaats 1">
+      <img src="images/about.jpg" alt="Werkplaats 2">
+      <img src="images/craft.jpg" alt="Werkplaats 3">
+      <img src="images/detail.jpg" alt="Werkplaats 4">
+      <img src="images/kitchen.jpg" alt="Werkplaats 5">
+      <img src="images/carousel.jpg" alt="Werkplaats 6">
+      <img src="images/hero.jpg" alt="Werkplaats 7">
+      <img src="images/about.jpg" alt="Werkplaats 8">
+      <img src="images/craft.jpg" alt="Werkplaats 9">
+      <img src="images/detail.jpg" alt="Werkplaats 10">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Reviews</span>
+        <h2>Wat onze klanten zeggen</h2>
+        <p>Meer dan 200 vijfsterren-reviews op Google.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Fantastische service! Mijn auto was dezelfde dag nog klaar en de prijs was precies zoals afgesproken."</p>
+          <div class="author">
+            <div class="author-avatar">JV</div>
+            <div class="author-info">
+              <span class="name">Jan de Vries</span>
+              <span class="role">Amsterdam-Zuid</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Al 5 jaar vaste klant. Eerlijk advies, prima vakmanschap en altijd vriendelijk. Absolute aanrader!"</p>
+          <div class="author">
+            <div class="author-avatar">MB</div>
+            <div class="author-info">
+              <span class="name">Marian Bakker</span>
+              <span class="role">Amsterdam-West</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"APK en grote beurt in een keer geregeld. Haal- en brengservice was super handig. Top garage!"</p>
+          <div class="author">
+            <div class="author-avatar">PK</div>
+            <div class="author-info">
+              <span class="name">Peter Kok</span>
+              <span class="role">Amsterdam-Oost</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg"><img src="images/cta-bg.jpg" alt="Contact AutoVakwerk"></div>
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <h2>Klaar om uw auto te laten keuren?</h2>
+      <p>Neem vandaag nog contact op voor een vrijblijvende offerte. Wij helpen u graag verder.</p>
+      <a href="tel:+31200000000" class="btn btn-primary">Bel Direct: 020-0000000</a>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">Team</span>
+        <h2>Maak kennis met ons team</h2>
+        <p>Onze gecertificeerde monteurs staan klaar om u van dienst te zijn.</p>
+      </div>
+      <div class="team-image"><img src="images/team.jpg" alt="Team AutoVakwerk"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge">FAQ</span>
+        <h2>Veelgestelde vragen</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">Hoe lang duurt een APK-keuring? <i class="lucide-plus"></i></button>
+          <div class="faq-answer"><p>Een APK-keuring duurt gemiddeld 30 tot 45 minuten. Bij eventuele reparaties kan dit langer duren, maar wij overleggen altijd eerst met u.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Bieden jullie garantie op reparaties? <i class="lucide-plus"></i></button>
+          <div class="faq-answer"><p>Ja, op al onze reparaties en onderdelen geven wij minimaal 12 maanden garantie. Zo weet u zeker dat u kwaliteit krijgt.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Kan ik een leenauto krijgen? <i class="lucide-plus"></i></button>
+          <div class="faq-answer"><p>Wij bieden gratis leenauto's aan bij grotere reparaties. Reserveer deze wel even van tevoren, want ze zijn populair!</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Werken jullie met alle automerken? <i class="lucide-plus"></i></button>
+          <div class="faq-answer"><p>Ja, wij werken met alle merken en modellen. Of u nu een Volkswagen, BMW, Toyota of Peugeot rijdt: u bent welkom.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Auto<span>Vakwerk</span></a>
+          <p>Uw betrouwbare autogarage in Amsterdam. Vakmanschap, eerlijkheid en kwaliteit sinds 2009.</p>
+        </div>
+        <div>
+          <h4>Diensten</h4>
+          <ul>
+            <li><a href="#services">APK-keuring</a></li>
+            <li><a href="#services">Onderhoud</a></li>
+            <li><a href="#services">Banden</a></li>
+            <li><a href="#services">Schadeherstel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="#about">Over Ons</a></li>
+            <li><a href="#projects">Projecten</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+31200000000">020-0000000</a></li>
+            <li><a href="mailto:info@autovakwerk.nl">info@autovakwerk.nl</a></li>
+            <li><a href="#">Amsterdam</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AutoVakwerk Amsterdam. Alle rechten voorbehouden.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="lucide-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="lucide-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="lucide-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    // Navbar scroll
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu
+    document.getElementById('hamburger').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+
+    // FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.parentElement.classList.toggle('active');
+      });
+    });
+
+    // GSAP
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray('.service-card, .project-card, .testimonial-card').forEach((el, i) => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%' },
+        y: 60, opacity: 0, duration: .8, delay: i % 3 * .15, ease: 'power3.out'
+      });
+    });
+
+    gsap.from('.hero-content', { y: 80, opacity: 0, duration: 1.2, ease: 'power3.out' });
+    gsap.from('.hero-stats .stat-item', { y: 40, opacity: 0, duration: .8, stagger: .15, delay: .6, ease: 'power3.out' });
+
+    gsap.from('.about-image', {
+      scrollTrigger: { trigger: '.about-grid', start: 'top 75%' },
+      x: -80, opacity: 0, duration: 1, ease: 'power3.out'
+    });
+    gsap.from('.about-text', {
+      scrollTrigger: { trigger: '.about-grid', start: 'top 75%' },
+      x: 80, opacity: 0, duration: 1, ease: 'power3.out'
+    });
+
+    // Carousel infinite scroll
+    const track = document.getElementById('carousel');
+    let pos = 0;
+    function animateCarousel() {
+      pos -= 0.5;
+      if (Math.abs(pos) >= track.scrollWidth / 2) pos = 0;
+      track.style.transform = `translateX(${pos}px)`;
+      requestAnimationFrame(animateCarousel);
+    }
+    animateCarousel();
+  </script>
+
+    // Before/After slider
+    (function() {
+      var before = document.getElementById('baBefore');
+      var label = document.getElementById('baLabel');
+      if (!before || typeof gsap === 'undefined') return;
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline({
+        scrollTrigger: { trigger: '.ba-section', start: 'top top', end: '+=200%', pin: true, scrub: 0.5, anticipatePin: 1 }
+      });
+      tl.fromTo(before, { clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(0 100% 0 0)', duration: 1, ease: 'none' });
+      tl.fromTo(label, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0.5);
+    })();
+
+</body>
+</html>
